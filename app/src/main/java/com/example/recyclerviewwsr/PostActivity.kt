@@ -1,5 +1,6 @@
 package com.example.recyclerviewwsr
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -36,6 +37,14 @@ class PostActivity : AppCompatActivity() {
                 }
             })
         }
+
+//        @Parcelize
+//        data class Item(
+//            var imageId: Int,
+//            var title: String,
+//            var price: Double,
+//            var category: String
+//        ) : Parcelable
 
         if (prefs.myLogin.isNotEmpty()){
             binding.etLogin.setText(prefs.myLogin)
